@@ -17,10 +17,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="/login">Log In</a>
+        {{#if isAuthorized}}
+        <a class="nav-link" href="/{{userName}}/album">My Album</a>
+        <a class="nav-link" href="/{{userName}}/profile">My Profile</a>
         <a class="nav-link" href="/logout">Log Out</a>
+        <a style="font-size: 17px; color:black" class="nav-link disabled">{{userName}}</a>
+        {{else}}
+        <a class="nav-link active" aria-current="page" href="/login">Log In</a>
         <a class="nav-link" href="/regis">Sign In</a>
-        <a class="nav-link disabled">userName{{userName}}</a>
+        {{/if}}
       </div>
     </div>
   </div>
