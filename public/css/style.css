@@ -1,0 +1,19 @@
+body{
+  background: rgb(245, 237, 228);
+}
+
+#regisForm{
+  height: 300px;
+  width: 300px;
+
+  display: flex;
+  align-items:flex-start;
+  justify-content:center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+#containerForLogin{
+  display: flex;
+  align-items:flex-start;
+  justify-content:space-around;
+}
