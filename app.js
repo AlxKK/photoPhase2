@@ -1,9 +1,9 @@
-const express = require('express');
+// const express = require('express');
 const config = require('./config/config');
 const mainRouter = require('./routes/main.routes');
 
-const app = express();
-config(app);
+const app = express()
+config(app)
 
 // app.use('/', mainRout);
 app.use('/', mainRouter);
