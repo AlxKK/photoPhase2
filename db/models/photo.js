@@ -16,6 +16,9 @@ module.exports = (sequelize, DataTypes) => {
       name: {
         type: DataTypes.TEXT,
       },
+      link: {
+        type: DataTypes.TEXT,
+      },
       albumId: {
         type: DataTypes.INTEGER,
         references: {

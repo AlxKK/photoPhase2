@@ -11,6 +11,9 @@ module.exports = {
       name: {
         type: Sequelize.TEXT,
       },
+      link: {
+        type: Sequelize.TEXT,
+      },
       albumId: {
         type: Sequelize.INTEGER,
         references: {
