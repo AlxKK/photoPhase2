@@ -10,6 +10,13 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date(),
       },
+      {
+        name: "cat nomer dva",
+        link: "https://unsplash.com/photos/E18nZ_OHh04",
+        albumId: 1,
+        createdAt: new Date(),
+        updatedAt: new Date(),
+      },
     ]);
   },
 
