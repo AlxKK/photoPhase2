@@ -1,15 +1,20 @@
-// const express = require('express');
+const express = require('express');
+
+const app = express();
+const PORT = process.env.PORT ?? 3000;
+
 const config = require('./config/config');
+const authRouter = require('./routes/auth.routes');
 const mainRouter = require('./routes/main.routes');
+const cardRouter = require('./routes/card.routes');
 
-const app = express()
-config(app)
-
-// app.use('/', mainRout);
+config(app);
+app.use('/auth', authRouter);
 app.use('/', mainRouter);
+app.use('/', cardRouter);
+app.use('/', cardRouter);
+app.use('/error', (req, res) => {
+  res.render('error');
+});
 
-
-
-app.listen(3000, () => console.log("listen port 3000"));
-// app.use('/', mainRouter)
-// app.use('/', mainRout);
+app.listen(PORT, () => console.log(`Server started at Port${PORT}...`));

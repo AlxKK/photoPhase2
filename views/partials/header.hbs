@@ -1,0 +1,55 @@
+<header class="header">
+  <div class="herader__body">
+    {{#if user}}
+    <nav>
+      <ul>
+        <li class="drop">
+          <div class="user-avatar">
+            <img src="../../img/ste.png" />
+          </div>
+          <a href="#">{{user.email}}</a>
+          <span aria-hidden="true" class="icon-reorder orange-txt"></span>
+          <div class="triangle"></div>
+          <div class="dropdownContain">
+            <div class="dropOut">
+              <ul>
+                <li><span aria-hidden="true" class="icon-envelope-alt"></span><a href="/auth/logout">Галерея</a></li>
+                <li><span aria-hidden="true" class="icon-user"></span><a href="/auth/logout">Добавить фото</a></li>
+                {{!-- <li><span aria-hidden="true" class="icon-cog"></span> <a href="/auth/logout">Фото</a></li> --}}
+                <li><span aria-hidden="true" class="icon-off"></span> <a href="/auth/logout">Выход</a> </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    {{else}}
+    <div class="header__reg">
+      <a href="/auth/login">Логин</a>
+      <a href="/auth/registration">Регистрация</a>
+    </div>
+    <div class="header__logo"></div>
+    {{/if}}
+  </div>
+</header>
+
+
+{{!-- <br>
+<center><a href="http://www.s-sd.ru"><img src="/files/logo.png" alt="" /></a></center><br>
+<div id="container">
+  <nav>
+    <ul>
+      <li class="home"><a href="">Главная</a></li>
+      <div class="gallery-wrapper">
+        <li class="gallery"><a href="">Галерея</a></li>
+        <ul>
+          <li><a href="">Фото</a></li>
+          <li><a href="">Картины</a></li>
+          <li><a href="">Проекты</a></li>
+        </ul>
+      </div>
+      <li class="logout"><a href="">Выйти</a></li>
+    </ul>
+  </nav>
+</div> --}}

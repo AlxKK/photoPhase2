@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  font-size: 30px !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form {
+  max-width: 320px;
+  padding: 15px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+
+  border: 1px solid #ccc;
+
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+
+  border: 0;
+  background-color: #1cbc11;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: 16px;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #14a20a;
+}
+
+.error-span {
+  display: block;
+  color: red;
+  margin: 3px 0px 8px 0px;
+}
+
+.error-span-login {
+  display: block;
+  color: red;
+  margin: 6px 0px 12px 0px;
+}
+
+/* .error-span-show {
+  display: inline;
+} */
+
+#select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.herader__body {
+  background-color: rgb(115, 173, 232);
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__reg {
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.header__reg :nth-child(2) {
+  margin-left: 10px;
+}
+
+.play {
+  position: relative;
+  top: 5px;
+  left: 500px;
+}
+
+/* ============================== */
+.wrapper {
+  margin: 30px auto 0;
+  max-width: 1280px;
+}
+
+.field {
+  margin: 0 auto;
+  display: flex;
+  width: 830px;
+  height: 830px;
+  flex-wrap: wrap;
+  background-color: #000;
+}
+
+.block {
+  background-color: #14a20a;
+  flex: 0 1 9.51%;
+  margin: 2px;
+}
+
+.abc ul {
+  font-size: 25px;
+  display: flex;
+  font-weight: bold;
+  margin-left: 150px;
+}
+
+.abc ul :nth-child(1) {
+  margin-left: 100px;
+}
+
+.abc ul :nth-child(8) {
+  margin-left: 50px;
+}
+
+.abc ul :nth-child(9) {
+  margin-left: 60px;
+}
+
+.abc ul :nth-child(10) {
+  margin-left: 80px;
+}
+
+
+
+.abc ul li {
+  margin-left: 70px;
+}
+
+.integer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  top: 150px;
+  left: 480px;
+  font-weight: bold;
+}
+
+.integer ul li {
+  margin-bottom: 60px;
+}
+
+.integer ul :nth-child(1) {
+  margin-bottom: 60px;
+  margin-top: 0;
+}

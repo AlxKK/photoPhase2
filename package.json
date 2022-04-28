@@ -1,29 +1,25 @@
 {
-  "name": "photoPhase2",
+  "name": "finalskelet",
   "version": "1.0.0",
-  "description": "## Требования",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js --ignore sessions",
-    "dbr": "npx sequelize db:drop && npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlxKK/photoPhase2.git"
+    "dev": "nodemon app.js --ignore ./sessions",
+    "db-create": "npx sequelize db:create",
+    "db-drop": "npx sequelize db:drop",
+    "db-migrate": "npx sequelize db:migrate:undo:all && npx sequelize db:migrate",
+    "db-seed": "npx sequelize db:seed:undo:all && npx sequelize db:seed:all"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlxKK/photoPhase2/issues"
-  },
-  "homepage": "https://github.com/AlxKK/photoPhase2#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "dotenv": "^16.0.0",
-    "express": "^4.18.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3",
     "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
     "hbs": "^4.2.0",
     "pg": "^8.7.3",
     "pg-hstore": "^2.3.4",
